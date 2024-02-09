@@ -1,0 +1,27 @@
+﻿@using ETCR.UI.Models;
+@model IEnumerable<ProductModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">Mağazamıza Hoşgeldiniz</h1>
+        <p class="lead">İletişim için mail adresimiz : oguzhanalmus@outlook.com</p>
+        <hr class="my-4">
+        <p>Mağazamız güvenilir ve hızlı alışveriş sunar</p>
+      
+    </div>
+</div>
+<div class="container pb-5">
+    @Html.Partial("_ProductList", Model)
+</div>
+
+
+
+
+
+
+
+
+
